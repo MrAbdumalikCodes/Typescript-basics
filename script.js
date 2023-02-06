@@ -1,23 +1,17 @@
 "use strict";
-// Arrays 
-const colors = ['red', 'green', 'blue'];
-const num = [1, 2, 3, 4, 5];
-// any 
-let all = 1;
-all = 'Hello world!';
-// function
-// void bu functiondan hech qanday ma'lumot qaytarmaydi
-function sayHi(a) {
-    if (typeof a === 'number') {
-        console.log(a.toFixed);
-    }
-    if (typeof a === 'string') {
-        console.log(a.toLocaleLowerCase);
-    }
-}
-const number = [1, 2, 3, 4, 5];
-number.map((item, index) => console.log(item * index));
 const logCar = (car) => {
     return `Name: ${car.name} , Year: ${car.year === undefined ? 'Not Aviable' : car.year}`;
 };
 console.log(logCar({ name: 'Audi' }));
+const ds = 'Hello world';
+const logCar2 = (car) => {
+    return `Name: ${car.name} , Year: ${car.year === undefined ? 'Not Aviable' : car.year}`;
+};
+const logAudi = (data) => {
+    console.log(`Name: ${data.color}`);
+};
+console.log(logCar2({ name: 'Audi s8' }));
+function logPoint(point) {
+    const d3 = point; // as - qattiq bog'lanish
+}
+const canvas = document.getElementById('canvas');
