@@ -1,16 +1,32 @@
-//************ Literal type *************/
+//********** ENUM **********/
+enum Dictionary{
+    Rus,
+    Uzb,
+    Eng,
+}
 
-let car: 'Audi' = 'Audi'
+const uzbIndex = Dictionary.Uzb
+const uzb = Dictionary[uzbIndex]
+console.log(uzb);
 
-type actionType = 'show' | 'hide'
+// getUzbNumber app
 
-const div = document.getElementById('div') as HTMLDivElement
+enum Numbers{
+    One,
+    Two,
+    Three,
+}
 
-function logger(action:actionType): boolean {
-    switch(action){
-        case 'hide':
-            return false;
-        case 'show':
-            return true    
+function getUzbNumber(number: Numbers){
+    switch(number){
+        case Numbers.One:
+            return 'Bir';
+       case Numbers.Two:
+        return 'Ikki'
+       case Numbers.Three :
+        return 'Uch'     
     }
 }
+
+
+let arr4: Array<boolean> = [];
